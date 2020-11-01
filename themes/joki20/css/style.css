@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box; /* include padding/border in total width/height */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100%; /* full height of page */
+}
+
+body { /* everything inside body is flex and column layout */
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.flash-img {
+    height: 200px; /* height of container */
+    width: 100%;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+    border-bottom: 0.1rem solid black;
+    border-top: 0.1rem solid black;
+}
+
+.main {
+    line-height: 1.5;
+}
+
+.main a {
+    color: #743a25;
+    text-decoration: none;
+}
+
+.main a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    margin-bottom: 2rem;
+}
+
+p {
+    padding: 1rem 0;
+}
+
+ul,
+ol {
+    padding: 0 0 1rem 1rem;
+}
+
+img.photo {
+    width: 15%;
+    border: 0.1rem solid black;
+    border-radius: 1rem;
+    float: right;
+}
+
+.main img { /* select all images inside main */
+    margin: 1rem;
+}
+
+/* Header - navigation */
+
+.site-header {
+    flex: 0 0 auto; /* flex-grow flex-shrink flex-basis, equals flex: none */
+    font-size: 1.2rem;
+    color: #2b2e30;
+    padding: 0; /* spacing to right */
+    background-color: #ffe198;
+}
+
+.flash-region {
+    font-size: 0; /* removes spacing below  flash img */
+    background-color: #ffe198;
+}
+
+.site-header a, .site-header a:visited { /* color links */
+    color: #000000;
+    text-decoration: none;
+}
+
+/* Main */
+
+.main {
+    flex: 1 0 auto; /* allows growing items */
+    padding: 2em; /* make content distance from top/right/bottom/left side */
+}
+
+/* Footer */
+
+.site-footer {
+    border-top: 0.1rem solid black;
+    flex: 0 0 auto; /* no flex */
+    flex-direction: row;
+    text-align: center;
+    background: #ffe198;
+    color: #2b2e30;
+    padding: 0.5rem; /* spacing within footer */
+}
+
+.site-footer .social {
+    font-size: 2rem;
+}
+
+.site-footer a {
+    color: #743a25;
+    padding: 0 1rem;
+    text-decoration: none; /* remove underline */
+}

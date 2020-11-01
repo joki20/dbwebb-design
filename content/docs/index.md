@@ -1,6 +1,6 @@
 ---
-Title: Docs
-Description: Documentation that came with Pico.
+Title: Dokumentation
+Description: Dokumentation som kom med Pico.
 # hidden: true
 ---
 
@@ -20,7 +20,7 @@ When you install Pico, it comes with some sample contents that will display
 until you add your own content. Simply add some `.md` files to your `content`
 folder in Pico's root directory. No configuration is required, Pico will
 automatically use the `content` folder as soon as you create your own
-`index.md`. Just check out [Pico's sample contents][SampleContents] for an
+`index.md`. Just check out [Pico's sample contents][samplecontents] for an
 example!
 
 If you create a folder within the content directory (e.g. `content/sub`) and
@@ -77,7 +77,7 @@ using the <code>&#37;assets_url&#37;</code> placeholder, for example:
 
 ### Text File Markup
 
-Text files are marked up using [Markdown][] and [Markdown Extra][MarkdownExtra].
+Text files are marked up using [Markdown][] and [Markdown Extra][markdownextra].
 They can also contain regular HTML.
 
 At the top of text files you can place a block comment and specify certain meta
@@ -110,18 +110,18 @@ Markdown files, for example:
 
 There are also certain variables that you can use in your text files:
 
-* <code>&#37;site_title&#37;</code> - The title of your Pico site
-* <code>&#37;base_url&#37;</code> - The URL to your Pico site; internal links
+- <code>&#37;site_title&#37;</code> - The title of your Pico site
+- <code>&#37;base_url&#37;</code> - The URL to your Pico site; internal links
   can be specified using <code>&#37;base_url&#37;?sub/page</code>
-* <code>&#37;theme_url&#37;</code> - The URL to the currently used theme
-* <code>&#37;assets_url&#37;</code> - The URL to Pico's `assets` directory
-* <code>&#37;themes_url&#37;</code> - The URL to Pico's `themes` directory;
+- <code>&#37;theme_url&#37;</code> - The URL to the currently used theme
+- <code>&#37;assets_url&#37;</code> - The URL to Pico's `assets` directory
+- <code>&#37;themes_url&#37;</code> - The URL to Pico's `themes` directory;
   don't confuse this with <code>&#37;theme_url&#37;</code>
-* <code>&#37;plugins_url&#37;</code> - The URL to Pico's `plugins` directory
-* <code>&#37;version&#37;</code> - Pico's current version string (e.g. `2.0.0`)
-* <code>&#37;meta.&#42;&#37;</code> - Access any meta variable of the current
+- <code>&#37;plugins_url&#37;</code> - The URL to Pico's `plugins` directory
+- <code>&#37;version&#37;</code> - Pico's current version string (e.g. `2.0.0`)
+- <code>&#37;meta.\*&#37;</code> - Access any meta variable of the current
   page, e.g. <code>&#37;meta.author&#37;</code> is replaced with `Joe Bloggs`
-* <code>&#37;config.&#42;&#37;</code> - Access any scalar config variable,
+- <code>&#37;config.\*&#37;</code> - Access any scalar config variable,
   e.g. <code>&#37;config.theme&#37;</code> is replaced with `default`
 
 ### Blogging
@@ -172,12 +172,12 @@ You can create themes for your Pico installation in the `themes` folder. Pico
 uses [Twig][] for template rendering. You can select your theme by setting the
 `theme` option in `config/config.yml` to the name of your theme folder.
 
-[Pico's default theme][PicoTheme] isn't really intended to be used for a
+[Pico's default theme][picotheme] isn't really intended to be used for a
 productive website, it's rather a starting point for creating your own theme.
 If the default theme isn't sufficient for you, and you don't want to create
 your own theme, you can use one of the great themes third-party developers and
 designers created in the past. As with plugins, you can find themes in
-[our Wiki][WikiThemes] and on [our website][OfficialThemes].
+[our Wiki][wikithemes] and on [our website][officialthemes].
 
 All themes must include an `index.twig` file to define the HTML structure of
 the theme, and a `pico-theme.yml` to set the necessary config parameters. Just
@@ -189,38 +189,38 @@ use the `blog.twig` template in your theme folder to display the page.
 Below are the Twig variables that are available to use in themes. Please note
 that URLs (e.g. `{{ base_url }}`) never include a trailing slash.
 
-* `{{ site_title }}` - Shortcut to the site title (see `config/config.yml`)
-* `{{ config }}` - Contains the values you set in `config/config.yml`
-                   (e.g. `{{ config.theme }}` becomes `default`)
-* `{{ base_url }}` - The URL to your Pico site; use Twig's `link` filter to
-                     specify internal links (e.g. `{{ "sub/page"|link }}`),
-                     this guarantees that your link works whether URL rewriting
-                     is enabled or not
-* `{{ theme_url }}` - The URL to the currently active theme
-* `{{ assets_url }}` - The URL to Pico's `assets` directory
-* `{{ themes_url }}` - The URL to Pico's `themes` directory; don't confuse this
-                       with `{{ theme_url }}`
-* `{{ plugins_url }}` - The URL to Pico's `plugins` directory
-* `{{ version }}` - Pico's current version string (e.g. `%version%`)
-* `{{ meta }}` - Contains the meta values of the current page
-    * `{{ meta.title }}` - The `Title` YAML header
-    * `{{ meta.description }}` - The `Description` YAML header
-    * `{{ meta.author }}` - The `Author` YAML header
-    * `{{ meta.date }}` - The `Date` YAML header
-    * `{{ meta.date_formatted }}` - The formatted date of the page as specified
-                                    by the `date_format` parameter in your
-                                    `config/config.yml`
-    * `{{ meta.time }}` - The [Unix timestamp][UnixTimestamp] derived from the
-                          `Date` YAML header
-    * `{{ meta.robots }}` - The `Robots` YAML header
-    * ...
-* `{{ content }}` - The content of the current page after it has been processed
-                    through Markdown
-* `{{ previous_page }}` - The data of the previous page, relative to
-                          `current_page`
-* `{{ current_page }}` - The data of the current page; refer to the "Pages"
-                         section below for details
-* `{{ next_page }}` - The data of the next page, relative to `current_page`
+- `{{ site_title }}` - Shortcut to the site title (see `config/config.yml`)
+- `{{ config }}` - Contains the values you set in `config/config.yml`
+  (e.g. `{{ config.theme }}` becomes `default`)
+- `{{ base_url }}` - The URL to your Pico site; use Twig's `link` filter to
+  specify internal links (e.g. `{{ "sub/page"|link }}`),
+  this guarantees that your link works whether URL rewriting
+  is enabled or not
+- `{{ theme_url }}` - The URL to the currently active theme
+- `{{ assets_url }}` - The URL to Pico's `assets` directory
+- `{{ themes_url }}` - The URL to Pico's `themes` directory; don't confuse this
+  with `{{ theme_url }}`
+- `{{ plugins_url }}` - The URL to Pico's `plugins` directory
+- `{{ version }}` - Pico's current version string (e.g. `%version%`)
+- `{{ meta }}` - Contains the meta values of the current page
+  - `{{ meta.title }}` - The `Title` YAML header
+  - `{{ meta.description }}` - The `Description` YAML header
+  - `{{ meta.author }}` - The `Author` YAML header
+  - `{{ meta.date }}` - The `Date` YAML header
+  - `{{ meta.date_formatted }}` - The formatted date of the page as specified
+    by the `date_format` parameter in your
+    `config/config.yml`
+  - `{{ meta.time }}` - The [Unix timestamp][unixtimestamp] derived from the
+    `Date` YAML header
+  - `{{ meta.robots }}` - The `Robots` YAML header
+  - ...
+- `{{ content }}` - The content of the current page after it has been processed
+  through Markdown
+- `{{ previous_page }}` - The data of the previous page, relative to
+  `current_page`
+- `{{ current_page }}` - The data of the current page; refer to the "Pages"
+  section below for details
+- `{{ next_page }}` - The data of the next page, relative to `current_page`
 
 To call assets from your theme, use `{{ theme_url }}`. For instance, to include
 the CSS file `themes/my_theme/example.css`, add
@@ -246,24 +246,24 @@ page's data using the `current_page` variable, or use the `prev_page` and/or
 pages list. But more importantly there's the `pages()` function. No matter how
 you access a page, it will always consist of the following data:
 
-* `{{ id }}` - The relative path to the content file (unique ID)
-* `{{ url }}` - The URL to the page
-* `{{ title }}` - The title of the page (`Title` YAML header)
-* `{{ description }}` - The description of the page (`Description` YAML header)
-* `{{ author }}` - The author of the page (`Author` YAML header)
-* `{{ date }}` - The date of the page (`Date` YAML header)
-* `{{ date_formatted }}` - The formatted date of the page as specified by the
-                           `date_format` parameter in your `config/config.yml`
-* `{{ time }}` - The [Unix timestamp][UnixTimestamp] derived from the page's
-                 date
-* `{{ raw_content }}` - The raw, not yet parsed contents of the page; use the
-                        filter to get the parsed contents of a page by passing
-                        its unique ID (e.g. `{{ "sub/page"|content }}`)
-* `{{ meta }}` - The meta values of the page (see global `{{ meta }}` above)
-* `{{ prev_page }}` - The data of the respective previous page
-* `{{ next_page }}` - The data of the respective next page
-* `{{ tree_node }}` - The page's node in Pico's page tree; check out Pico's
-                      [page tree documentation][FeaturesPageTree] for details
+- `{{ id }}` - The relative path to the content file (unique ID)
+- `{{ url }}` - The URL to the page
+- `{{ title }}` - The title of the page (`Title` YAML header)
+- `{{ description }}` - The description of the page (`Description` YAML header)
+- `{{ author }}` - The author of the page (`Author` YAML header)
+- `{{ date }}` - The date of the page (`Date` YAML header)
+- `{{ date_formatted }}` - The formatted date of the page as specified by the
+  `date_format` parameter in your `config/config.yml`
+- `{{ time }}` - The [Unix timestamp][unixtimestamp] derived from the page's
+  date
+- `{{ raw_content }}` - The raw, not yet parsed contents of the page; use the
+  filter to get the parsed contents of a page by passing
+  its unique ID (e.g. `{{ "sub/page"|content }}`)
+- `{{ meta }}` - The meta values of the page (see global `{{ meta }}` above)
+- `{{ prev_page }}` - The data of the respective previous page
+- `{{ next_page }}` - The data of the respective next page
+- `{{ tree_node }}` - The page's node in Pico's page tree; check out Pico's
+  [page tree documentation][featurespagetree] for details
 
 Pico's `pages()` function is the best way to access all of your site's pages.
 It uses Pico's page tree to easily traverse a subset of Pico's pages list. It
@@ -290,7 +290,7 @@ a page's child pages by passing the `depth` and `depthOffset` params. For
 example, if you pass `pages(depthOffset=-1)`, the list will also include Pico's
 main index page (i.e. `content/index.md`). This one is commonly used to create
 a theme's main navigation. If you want to learn more, head over to Pico's
-complete [`pages()` function documentation][FeaturesPagesFunction].
+complete [`pages()` function documentation][featurespagesfunction].
 
 If you want to access the data of a particular page, use Pico's `pages`
 variable. Just take `content/_meta.md` in Pico's sample contents for an
@@ -308,25 +308,25 @@ Additional to [Twig][]'s extensive list of filters, functions and tags, Pico
 also provides some useful additional filters and functions to make theming
 even easier.
 
-* Pass the unique ID of a page to the `link` filter to return the page's URL
+- Pass the unique ID of a page to the `link` filter to return the page's URL
   (e.g. `{{ "sub/page"|link }}` gets `%base_url%?sub/page`).
-* You can replace URL placeholders (like <code>&#37;base_url&#37;</code>) in
+- You can replace URL placeholders (like <code>&#37;base_url&#37;</code>) in
   arbitrary strings using the `url` filter. This is helpful together with meta
   variables, e.g. if you add <code>image: &#37;assets_url&#37;/stock.jpg</code>
   to the YAML header of a page, `{{ meta.image|url }}` will return
   `%assets_url%/stock.jpg`.
-* To get the parsed contents of a page, pass its unique ID to the `content`
+- To get the parsed contents of a page, pass its unique ID to the `content`
   filter (e.g. `{{ "sub/page"|content }}`).
-* You can parse any Markdown string using the `markdown` filter. For example,
+- You can parse any Markdown string using the `markdown` filter. For example,
   you might use Markdown in the `description` meta variable and later parse it
   in your theme using `{{ meta.description|markdown }}`. You can also pass meta
-  data as parameter to replace <code>&#37;meta.&#42;&#37;</code> placeholders
+  data as parameter to replace <code>&#37;meta.\*&#37;</code> placeholders
   (e.g. `{{ "Written by *%meta.author%*"|markdown(meta) }}` yields "Written by
-  *John Doe*"). However, please note that all contents will be wrapped inside
+  _John Doe_"). However, please note that all contents will be wrapped inside
   HTML paragraph elements (i.e. `<p>…</p>`). If you want to parse just a single
   line of Markdown markup, pass the `singleLine` param to the `markdown` filter
   (e.g. `{{ "This really is a *single* line"|markdown(singleLine=true) }}`).
-* Arrays can be sorted by one of its keys using the `sort_by` filter
+- Arrays can be sorted by one of its keys using the `sort_by` filter
   (e.g. `{% for page in pages|sort_by([ 'meta', 'nav' ]) %}...{% endfor %}`
   iterates through all pages, ordered by the `nav` meta header; please note the
   `[ 'meta', 'nav' ]` part of the example, it instructs Pico to sort by
@@ -334,14 +334,14 @@ even easier.
   the array; you can specify `bottom` (move items to bottom; default), `top`
   (move items to top), `keep` (keep original order) or `remove` (remove items)
   as second parameter to change this behavior.
-* You can return all values of a given array key using the `map` filter
+- You can return all values of a given array key using the `map` filter
   (e.g. `{{ pages|map("title") }}` returns all page titles).
-* Use the `url_param` and `form_param` Twig functions to access HTTP GET (i.e.
+- Use the `url_param` and `form_param` Twig functions to access HTTP GET (i.e.
   a URL's query string like `?some-variable=my-value`) and HTTP POST (i.e. data
   of a submitted form) parameters. This allows you to implement things like
   pagination, tags and categories, dynamic pages, and even more - with pure
   Twig! Simply head over to our [introductory page for accessing HTTP
-  parameters][FeaturesHttpParams] for details.
+  parameters][featureshttpparams] for details.
 
 ### Plugins
 
@@ -349,7 +349,7 @@ even easier.
 
 Officially tested plugins can be found at http://picocms.org/plugins/, but
 there are many awesome third-party plugins out there! A good start point for
-discovery is [our Wiki][WikiPlugins].
+discovery is [our Wiki][wikiplugins].
 
 Pico makes it very easy for you to add new features to your website using
 plugins. Just like Pico, you can install plugins either using [Composer][]
@@ -393,22 +393,22 @@ title will be "Pico".
 
 For more help have a look at the Pico documentation at http://picocms.org/docs.
 
-[Pico]: http://picocms.org/
-[PicoTheme]: https://github.com/picocms/pico-theme
-[SampleContents]: https://github.com/picocms/Pico/tree/master/content-sample
-[Markdown]: http://daringfireball.net/projects/markdown/syntax
-[MarkdownExtra]: https://michelf.ca/projects/php-markdown/extra/
-[YAML]: https://en.wikipedia.org/wiki/YAML
-[Twig]: http://twig.sensiolabs.org/documentation
-[UnixTimestamp]: https://en.wikipedia.org/wiki/Unix_timestamp
-[Composer]: https://getcomposer.org/
-[FeaturesHttpParams]: http://picocms.org/in-depth/features/http-params/
-[FeaturesPageTree]: http://picocms.org/in-depth/features/page-tree/
-[FeaturesPagesFunction]: http://picocms.org/in-depth/features/pages-function/
-[WikiThemes]: https://github.com/picocms/Pico/wiki/Pico-Themes
-[WikiPlugins]: https://github.com/picocms/Pico/wiki/Pico-Plugins
-[OfficialThemes]: http://picocms.org/themes/
-[PluginUpgrade]: http://picocms.org/development/#upgrade
-[ModRewrite]: https://httpd.apache.org/docs/current/mod/mod_rewrite.html
-[AllowOverride]: https://httpd.apache.org/docs/current/mod/core.html#allowoverride
-[NginxConfig]: http://picocms.org/in-depth/nginx/
+[pico]: http://picocms.org/
+[picotheme]: https://github.com/picocms/pico-theme
+[samplecontents]: https://github.com/picocms/Pico/tree/master/content-sample
+[markdown]: http://daringfireball.net/projects/markdown/syntax
+[markdownextra]: https://michelf.ca/projects/php-markdown/extra/
+[yaml]: https://en.wikipedia.org/wiki/YAML
+[twig]: http://twig.sensiolabs.org/documentation
+[unixtimestamp]: https://en.wikipedia.org/wiki/Unix_timestamp
+[composer]: https://getcomposer.org/
+[featureshttpparams]: http://picocms.org/in-depth/features/http-params/
+[featurespagetree]: http://picocms.org/in-depth/features/page-tree/
+[featurespagesfunction]: http://picocms.org/in-depth/features/pages-function/
+[wikithemes]: https://github.com/picocms/Pico/wiki/Pico-Themes
+[wikiplugins]: https://github.com/picocms/Pico/wiki/Pico-Plugins
+[officialthemes]: http://picocms.org/themes/
+[pluginupgrade]: http://picocms.org/development/#upgrade
+[modrewrite]: https://httpd.apache.org/docs/current/mod/mod_rewrite.html
+[allowoverride]: https://httpd.apache.org/docs/current/mod/core.html#allowoverride
+[nginxconfig]: http://picocms.org/in-depth/nginx/

@@ -1,0 +1,59 @@
+// containing eventual modules
+@import '../../shared/scss/base'; // import from shared, including normalize and fonts
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap'); // import 'Open Sans' and Roboto fonts
+
+// overrides shared/scss/variables
+$main-color: #fcffcd; // light yellow
+$secondary-color: #ffe198; // darker yellow
+$link-color: #bb5f2c; // very dark
+$text-color: #333;
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body,
+.container,
+ {
+    background-color: $main-color;
+    line-height: 1.4;
+    color: $text-color;
+
+    a {
+        color: $link-color;
+    }
+}
+
+header,
+.flash-region {
+    background-color: $secondary-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.report {
+    text-align: center;
+}
+
+footer {
+    background-color: $secondary-color;
+    text-align:center;
+    color: $text-color;
+
+    a { // nested social links
+        color: $link-color;
+    }
+}
+
+@media (max-width: 767px) {
+    #nav {
+        background-color: $secondary-color;
+    }
+}

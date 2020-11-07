@@ -1,22 +1,26 @@
 * {
-    box-sizing: border-box; /* include padding/border in total width/height */
+    box-sizing: border-box;
+    /* include padding/border in total width/height */
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 html, body {
-    height: 100%; /* full height of page */
+    height: 100%;
+    /* full height of page */
 }
 
-body { /* everything inside body is flex and column layout */
+body {
+    /* everything inside body is flex and column layout */
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
 }
 
 .flash-img {
-    height: 200px; /* height of container */
+    height: 200px;
+    /* height of container */
     width: 100%;
     object-fit: cover;
     margin: 0;
@@ -58,47 +62,53 @@ img.photo {
     float: right;
 }
 
-.main img { /* select all images inside main */
+.main img {
+    /* select all images inside main */
     margin: 1rem;
 }
 
 /* Header - navigation */
-
 .site-header {
-    flex: 0 0 auto; /* flex-grow flex-shrink flex-basis, equals flex: none */
+    flex: 0 0 auto;
+    /* flex-grow flex-shrink flex-basis, equals flex: none */
     font-size: 1.2rem;
     color: #2b2e30;
-    padding: 0; /* spacing to right */
+    padding: 0;
+    /* spacing to right */
     background-color: #ffe198;
 }
 
 .flash-region {
-    font-size: 0; /* removes spacing below  flash img */
+    font-size: 0;
+    /* removes spacing below  flash img */
     background-color: #ffe198;
 }
 
-.site-header a, .site-header a:visited { /* color links */
+.site-header a, .site-header a:visited {
+    /* color links */
     color: #000000;
     text-decoration: none;
 }
 
 /* Main */
-
 .main {
-    flex: 1 0 auto; /* allows growing items */
-    padding: 2em; /* make content distance from top/right/bottom/left side */
+    flex: 1 0 auto;
+    /* allows growing items */
+    padding: 2em;
+    /* make content distance from top/right/bottom/left side */
 }
 
 /* Footer */
-
 .site-footer {
     border-top: 0.1rem solid black;
-    flex: 0 0 auto; /* no flex */
+    flex: 0 0 auto;
+    /* no flex */
     flex-direction: row;
     text-align: center;
     background: #ffe198;
     color: #2b2e30;
-    padding: 0.5rem; /* spacing within footer */
+    padding: 0.5rem;
+    /* spacing within footer */
 }
 
 .site-footer .social {
@@ -108,5 +118,6 @@ img.photo {
 .site-footer a {
     color: #743a25;
     padding: 0 1rem;
-    text-decoration: none; /* remove underline */
+    text-decoration: none;
+    /* remove underline */
 }

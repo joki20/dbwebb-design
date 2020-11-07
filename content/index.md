@@ -7,7 +7,7 @@ Description: Min index-sida.
 
 ![Bild på mig](%assets_url%/img/johan.jpg "Johan") {.photo}
 
-Halloj!
+Halloj! <i class="fas fa-heart"></i>
 
 Mitt namn är Johan Kristoffersson. Jag läser webbprogrammering första året på BTH. Den här sidan är gjord för designkursen. Arbetar i nuläget som matematiklärare mot högstadienivå där jag även undervisar i bland annat Python.
 
@@ -17,9 +17,9 @@ Har tidigare läst strökurser i HTML, CSS, JavaScript och Python. Det har under
 
 Jag gillar:
 
-- Brädspel
-- programmering
-- kebab
+- Brädspel <i class="fas fa-chess-pawn"></i>
+- programmering <i class="fas fa-code"></i>
+- kebab <i class="fas fa-utensils"></i>
 
 ---
 

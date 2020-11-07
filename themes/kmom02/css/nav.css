@@ -1,0 +1,102 @@
+.hidden {
+    /* hide nav in mobile view */
+    display: none !important;
+}
+
+.sr-only {
+    /* toggle menu for screen readers only */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0 none;
+}
+
+.slide {
+    /* allowing menu slide */
+    overflow-y: hidden !important;
+    -webkit-transition: height 0.5s ease-in !important;
+    transition: height 0.5s ease-in !important;
+}
+
+#nav {
+    /* nav menu */
+    padding: 1.2em 0;
+    text-align: left;
+}
+
+#nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#nav ul li {
+    display: inline-block;
+    /* allows nav side by side */
+    margin-left: 1em;
+    padding: 0 1rem;
+    font-weight: bold;
+}
+
+#nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+#nav a:hover {
+    color: #743a25;
+    text-decoration: underline;
+}
+
+#nav-toggle {
+    /* hide in normal view */
+    display: none;
+}
+
+/* Small devices */
+@media (max-width: 767px) {
+    .site-header {
+        padding: 0;
+        /* remove side padding in menu for hovering */
+    }
+
+    #nav {
+        clear: both;
+        width: 100%;
+        padding: 0;
+    }
+
+    #nav ul {
+        padding-bottom: 1em;
+    }
+
+    #nav ul li {
+        display: block;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #nav ul li a {
+        display: block;
+        padding: 0.5em 0;
+    }
+
+    .js #nav-toggle {
+        display: block;
+        float: right;
+        width: 2em;
+        margin: 0.6667em 0;
+        font-size: 1.5rem;
+        line-height: 2em;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .js #nav-toggle>* {
+        vertical-align: middle;
+    }
+}

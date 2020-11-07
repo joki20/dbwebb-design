@@ -1,0 +1,66 @@
+.flash-region {
+    line-height: 0; // avoids stretching below flash-img
+}
+
+img.flash-img {
+    width: 100%; // avoid horizontal scroll
+    height: 150px;
+    object-fit: cover;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.container {
+    min-height: 20rem;
+    background-color: #fff;
+    padding: 10px;
+
+    img { // nested image
+         max-width: 100%; // avoid horizontal scroll
+         display: block;
+         width: 20%;
+         border: 1px solid black;
+         border-radius: 10%;
+     }
+}
+
+.auto {
+    margin: auto;
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+    padding: 1rem;
+    border-top: 2px solid black;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+
+    .container {
+        img {
+        display: block;
+        margin: 0 auto;
+        max-width: 20%;
+        width: 20%;
+    }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            text-align: center;
+        }
+
+        .reports {
+            display: block;
+            text-align: center;
+        }
+    }
+}

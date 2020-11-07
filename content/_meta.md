@@ -4,9 +4,9 @@ Tagline: Student at dbwebb.
 Social:
   - title: Link till sidans github repo.
     url: https://github.com/joki20/
-    icon: github
+    icon: fab fa-github
 
   - title: Link till course hub.
     url: https://dbwebb.se/design
-    icon: pagelines
+    icon: fab fa-pagelines
 ---

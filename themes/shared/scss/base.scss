@@ -1,0 +1,11 @@
+// import all files for base theme, without .scss ending
+
+@import '../../node_modules/normalize.css/normalize';
+@import '../../shared/fontawesome/scss/fontawesome'; // font module
+$fa-font-path: '../../shared/fontawesome/webfonts'; // update path
+@import '../../shared/fontawesome/scss/brands'; // font style
+@import '../../shared/fontawesome/scss/solid'; // font style
+@import '../../shared/fontawesome/scss/regular'; // font style
+
+@import 'variables'; // contains variables
+@import 'layout'; // uses variables

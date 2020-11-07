@@ -1,0 +1,21 @@
+@import '../../shared/fontawesome/scss/fontawesome'; // font module
+$fa-font-path: '../../shared/fontawesome/webfonts'; // update path
+@import '../../shared/fontawesome/scss/brands'; // font style
+@import '../../shared/fontawesome/scss/solid'; // font style
+@import '../../shared/fontawesome/scss/regular'; // font style
+@import '../../shared/scss/base'; // import from shared
+
+$base-color: #c6538c; // light pink, use this color instead of shared inside shared/scss/variables
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans', sans-serif;
+}

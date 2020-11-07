@@ -56,9 +56,9 @@ header {
 }
 
 footer {
-    width: 100%;
-    padding: 1rem;
+    padding: 1rem 0;
     border-top: 2px solid black;
+    overflow: hidden;
 }
 
 footer p {

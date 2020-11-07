@@ -1,13 +1,39 @@
-.flash-region {
-    line-height: 0; // avoids stretching below flash-img
-}
+header {
+    margin: 0;
 
-img.flash-img {
-    width: 100%; // avoid horizontal scroll
-    height: 150px;
-    object-fit: cover;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    .title {
+        width:25rem;
+    }
+
+    h1 {
+       margin: 0;
+       padding-left: 1rem;
+    }
+
+    p {
+        margin-top: 0;
+        padding-left: 1rem;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .logo img {
+        width: 5rem;
+    }
+
+    .flash-region {
+        line-height: 0; // avoids stretching below flash-img
+    }
+
+    img.flash-img {
+        width: 100%; // avoid horizontal scroll
+        height: 150px;
+        object-fit: cover;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
 }
 
 .container {
@@ -47,7 +73,11 @@ footer p {
         margin: 0 auto;
         max-width: 20%;
         width: 20%;
-    }
+        }
+
+        h1 {
+            margin-bottom: 0;
+        }
 
         h1,
         h2,

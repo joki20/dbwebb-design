@@ -6457,11 +6457,30 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
-.flash-region {
+header {
+  margin: 0;
+}
+header .title {
+  width: 25rem;
+}
+header h1 {
+  margin: 0;
+  padding-left: 1rem;
+}
+header p {
+  margin-top: 0;
+  padding-left: 1rem;
+}
+header a {
+  text-decoration: none;
+}
+header .logo img {
+  width: 5rem;
+}
+header .flash-region {
   line-height: 0;
 }
-
-img.flash-img {
+header img.flash-img {
   width: 100%;
   height: 150px;
   object-fit: cover;
@@ -6503,6 +6522,9 @@ footer p {
     margin: 0 auto;
     max-width: 20%;
     width: 20%;
+  }
+  .container h1 {
+    margin-bottom: 0;
   }
   .container h1,
 .container h2,

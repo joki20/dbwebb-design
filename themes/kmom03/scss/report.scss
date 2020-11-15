@@ -12,7 +12,7 @@ $box-color: #51608b;
         border-bottom: 4px solid $box-color;
         border-right: 4px solid $box-color;
 
-        h2 {
+        h3 {
             margin: 0 auto;
             padding: 0.5rem;
             display: block;
@@ -36,7 +36,7 @@ $box-color: #51608b;
         }
     }
 
-    h1 {
+    h3 {
         grid-column: span 3; /* grud wudth 3 columns for title */
         justify-self: center;
     }

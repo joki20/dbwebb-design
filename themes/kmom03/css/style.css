@@ -6550,7 +6550,7 @@ footer p {
   border-bottom: 4px solid #51608b;
   border-right: 4px solid #51608b;
 }
-.landingpage .kmom-box h2 {
+.landingpage .kmom-box h3 {
   margin: 0 auto;
   padding: 0.5rem;
   display: block;
@@ -6570,7 +6570,7 @@ footer p {
   border-radius: 100%;
   font-weight: 900;
 }
-.landingpage h1 {
+.landingpage h3 {
   grid-column: span 3;
   /* grud wudth 3 columns for title */
   justify-self: center;
@@ -6627,6 +6627,8 @@ footer p {
 }
 * {
   font-family: "Roboto", sans-serif;
+  overflow: hidden;
+  /* hide overflow content */
 }
 
 .container {

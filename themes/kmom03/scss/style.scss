@@ -13,7 +13,7 @@ $text-color: #333;
 
 * {
     font-family: 'Roboto', sans-serif;
-    overflow-x: hidden; /* hide overflow content */
+    scrollbar: visible;
 }
 
 .container,
@@ -27,11 +27,14 @@ $text-color: #333;
 
 .hero-image {
     position: relative;
+    display: block;
     background-image: url("https://www.stockvault.net/data/2011/02/06/117456/preview16.jpg");
     background-size: 100% auto; // stretch to full width
     background-repeat: no-repeat;
     padding-bottom: 1rem;
     border-bottom: 1px solid black;
+
+
 
     a {
         color: $header-color;

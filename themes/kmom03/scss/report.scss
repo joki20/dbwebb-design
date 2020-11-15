@@ -36,7 +36,8 @@ $box-color: #51608b;
         }
     }
 
-    h3 {
+    h2 {
+        display: block;
         grid-column: span 3; /* grud wudth 3 columns for title */
         justify-self: center;
     }

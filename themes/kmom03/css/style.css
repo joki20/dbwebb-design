@@ -6460,9 +6460,6 @@ readers do not read off random characters that represent icons */
 header {
   margin: 0;
 }
-header .title {
-  width: 25rem;
-}
 header h1 {
   margin: 0;
   padding-left: 1rem;
@@ -6570,7 +6567,8 @@ footer p {
   border-radius: 100%;
   font-weight: 900;
 }
-.landingpage h3 {
+.landingpage h2 {
+  display: block;
   grid-column: span 3;
   /* grud wudth 3 columns for title */
   justify-self: center;
@@ -6627,8 +6625,7 @@ footer p {
 }
 * {
   font-family: "Roboto", sans-serif;
-  overflow: hidden;
-  /* hide overflow content */
+  scrollbar: visible;
 }
 
 .container {
@@ -6641,6 +6638,7 @@ footer p {
 
 .hero-image {
   position: relative;
+  display: block;
   background-image: url("https://www.stockvault.net/data/2011/02/06/117456/preview16.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;

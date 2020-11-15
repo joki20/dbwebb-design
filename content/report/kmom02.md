@@ -1,6 +1,7 @@
 ---
 Title: Kmom02
 Description: Min sida för kmom02.
+Template: kmom
 ---
 
 # Kmom02

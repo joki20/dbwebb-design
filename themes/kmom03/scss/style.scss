@@ -1,0 +1,117 @@
+// containing eventual modules
+@import '../../shared/scss/base'; // import from shared, including normalize and fonts
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap'); // import 'Open Sans' and Roboto fonts
+@import 'report'; // report.scss
+@import 'kmom'; // kmom.scss
+
+// overrides shared/scss/variables
+$header-color: #ffffff; // white
+$main-color: #ffffff; // white
+$secondary-color: #b0c4de; // lighter blue
+$link-color: #808080; // dark grey
+$text-color: #333;
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container,
+ {
+    background-color: $main-color;
+    line-height: 1.4;
+    color: $text-color;
+    min-height: 24rem;
+    padding-bottom: 1rem;
+}
+
+.hero-image {
+    position: relative;
+    background-image: url("https://www.stockvault.net/data/2011/02/06/117456/preview16.jpg");
+    background-size: 100% auto; // stretch to full width
+    background-repeat: no-repeat;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid black;
+
+    a {
+        color: $header-color;
+    }
+
+    img {
+        filter: grayscale(100%) brightness(200%);
+    }
+
+    nav a:hover {
+        color: #51608b;
+    }
+
+    #nav-toggle {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    ul {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+}
+
+.logo {
+    position: relative;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main {
+
+    a {
+    color: black;
+    text-decoration: none;
+    }
+
+    .sidemenu li:hover {
+        background-color: $secondary-color;
+    }
+
+    a:visited {
+        color: black;
+    }
+
+    .report {
+        text-align: left;
+    }
+}
+
+footer {
+    background-color: $secondary-color;
+    text-align:center;
+    color: black;
+    margin-bottom: 0;
+
+    a { // nested social links
+        color: black;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: white;
+    }
+}
+
+@media (max-width: 767px) {
+    #nav {
+        background-color: $main-color;
+    }
+}

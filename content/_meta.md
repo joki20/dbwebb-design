@@ -1,6 +1,6 @@
 ---
 Logo: image/leaf_256x256.png
-Tagline: Student at dbwebb.
+Tagline: Allt du behöver veta om mig.
 Social:
   - title: Link till sidans github repo.
     url: https://github.com/joki20/

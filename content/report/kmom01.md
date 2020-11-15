@@ -1,6 +1,7 @@
 ---
 Title: Kmom01
 Description: Min sida för kmom01.
+Template: kmom # looking for kmom.twig
 ---
 
 # Kmom01

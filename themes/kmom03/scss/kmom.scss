@@ -1,0 +1,37 @@
+.kmompage {
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-areas: 'menu content';
+    padding: 0 1rem;
+    grid-gap: 1rem;
+
+    .sidemenu { grid-area: menu; }
+    .kmom { grid-area: content; }
+
+    nav ul {
+        list-style-type: none; /* remove bullets */
+        min-height: 24rem;
+        padding-left: 0.6rem; /* adjust indentation */
+
+        li {
+            padding-left: 0.4rem;
+            line-height: 1.5;
+        }
+    }
+}
+
+
+@media (max-width: 767px) {
+    .kmompage {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 'content content';
+        }
+
+        .kmom {grid-area: content; }
+
+        .sidemenu {
+            display: none;
+        }
+
+    }

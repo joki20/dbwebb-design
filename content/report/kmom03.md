@@ -8,7 +8,7 @@ Template: kmom
 
 Det har gått relativt bra att arbeta med Grid och flexbox. För detta kursmoment har jag endast använt mig av grid då jag kunde göra allt jag behövde för kursmomentet genom det.
 
-Även om jag inte använde mig av flex är området inte obekant för mig. I en tidigare kurs med HTML/CSS har jag gjort en hemsida där grid och flex var mycket i fokus. Ni hittar den här: [Djupviks hamn](http://s0c4j45.dwapp.se/). Beroende på vilken man använder så har de olika fördelar:
+Även om jag inte använde mig av flex är området inte obekant för mig. I en tidigare kurs med HTML/CSS har jag gjort en hemsida där grid och flex var mycket i fokus. Ni hittar den här: **[Djupviks hamn](http://s0c4j45.dwapp.se/)**. Beroende på vilken man använder så har de olika fördelar:
 
 Grid är mer användbart när man vill strukturera ut elementen på en sida. Det är lättare att skapa en grundläggande skiss för en sida med hjälp av grid. Min favorit-property i grid är grid-template-areas där du kan skapa ett rutnät och sedan placera ut de olika elementen var du vill. Det känns naturligt att strukturera ut elementen på detta sätt.
 

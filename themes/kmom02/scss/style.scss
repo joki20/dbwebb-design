@@ -13,8 +13,7 @@ $text-color: #333;
 }
 
 body,
-.container,
- {
+.container {
     background-color: $main-color;
     line-height: 1.4;
     color: $text-color;
@@ -44,7 +43,7 @@ h6 {
 
 footer {
     background-color: $secondary-color;
-    text-align:center;
+    text-align: center;
     color: $text-color;
 
     a { // nested social links
@@ -53,7 +52,7 @@ footer {
 }
 
 @media (max-width: 767px) {
-    #nav {
+    nav {
         background-color: $secondary-color;
     }
 }

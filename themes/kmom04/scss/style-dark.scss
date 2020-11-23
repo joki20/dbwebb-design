@@ -1,0 +1,185 @@
+// containing eventual modules
+@import '../../shared/scss/base'; // import from shared, including normalize, fonts, FontAwesome
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap'); // import 'Open Sans' and Roboto fonts
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import 'report'; // report.scss
+@import 'kmom'; // kmom.scss
+@import 'analysis'; // analysis.scss
+
+// this overrides shared/scss/variables
+
+// color scheme
+$bg-color: #121212; // dark
+$base-color: #121212; // dark
+$link-color: #bbb; // grey
+$text-color: #bbb; // make somewhat darker
+
+* {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: $text-color;
+}
+
+body {
+    background-color: $bg-color;
+}
+
+.container {
+    background-color: $bg-color;
+    line-height: 1.4;
+    color: $base-color;
+    min-height: 24rem;
+    padding-bottom: 1rem;
+}
+
+.hero-image {
+    background-color: $base-color;
+    position: relative;
+    display: block;
+    background-size: 100% auto; // stretch to full width
+    background-repeat: no-repeat;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid $text-color;
+
+    img {
+        filter: grayscale(100%) brightness(70%);
+    }
+
+    .nav-toggle {
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: $text-color;
+    }
+
+    ul {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+}
+
+nav {
+    background-color: $bg-color;
+
+    a {
+        color: $text-color;
+    }
+}
+
+.logo {
+    position: relative;
+
+}
+
+h1 {
+    font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Varela Round', sans-serif;
+    color: $text-color;
+}
+
+.main {
+    img {
+        filter: brightness(80%);
+    }
+
+    a {
+        color: $link-color;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .sidemenu li:hover {
+        background-color: $text-color;
+    }
+
+    .sidemenu li:hover a {
+        color: $bg-color;
+    }
+
+    a:visited {
+        color: $text-color;
+    }
+
+    .report {
+        text-align: left;
+    }
+}
+
+.landingpage .kmom-box {
+
+    border: 2px solid $text-color;
+
+    h3 {
+        background-color: $base-color;
+        color: $text-color;
+        border-bottom: 2px solid $text-color;
+    }
+
+    .link {
+        background-color: $link-color;
+        color: $bg-color;
+    }
+}
+
+footer {
+    background-color: $base-color;
+    text-align: center;
+    color: $text-color;
+    margin-bottom: 0;
+    border-top: 2px solid $text-color;
+
+    a { // nested social links
+        color: $text-color;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: $bg-color;
+    }
+}
+
+table {
+    h3 {
+        font-weight: bold;
+    }
+
+    h3,
+    h4 {
+        color: $bg-color;
+        font-size: 1.5rem;
+    }
+
+    th {
+        background-color: $text-color;
+        border: 2px solid $text-color;
+    }
+
+    td {
+        border: 1px solid $text-color;
+        padding: 0.5rem;
+        vertical-align: top;
+    }
+
+    tr:nth-child(2n) {
+        background-color: $text-color;
+        border: 2px solid $text-color;
+    }
+}
+
+@media (max-width: 767px) {
+    nav {
+        background-color: $bg-color;
+    }
+}

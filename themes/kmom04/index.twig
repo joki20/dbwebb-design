@@ -21,19 +21,15 @@
     <!-- Insert font choice here -->
     {# <link rel="stylesheet" href="{{ theme_url }}/../shared//css/dorid-sans.css" type="text/css" /> #}
     <!-- End -->
-    <link rel="stylesheet" href="{{ theme_url }}/css/style.css" type="text/css" />
+    {% if config.session.theme == "dark" %}
+        <link rel="stylesheet" href="{{ theme_url }}/css/style-dark.css" type="text/css" />
+    {% else %}
+        <link rel="stylesheet" href="{{ theme_url }}/css/style.css" type="text/css" />
+    {% endif %}
     <link rel="stylesheet" href="{{ theme_url }}/css/nav.css" type="text/css" /> <!-- mobile css -->
 
 </head>
 
-<!--
-<div class="hero-image">
-    <div class="hero-text">
-        <h1 class="site-title">Begravningsmuseum Online</h1>
-        <span class="site-slogan">Seder och bruk</span>
-    </div>
-</div>
-    -->
 <!-- theme change and "Widescreen-mode" can be activated in /config/config.yml -->
 <body{% if config.theme_config.widescreen %} class="widescreen"{% endif %}>
     <header class="site-header">
@@ -67,24 +63,14 @@
         </ul>
     </nav>
     </header>
-    <div class="main" role="main">
-        <div class="kmompage">
-            <nav class="sidemenu">
-                <ul>
-                    <li><a href="kmom01">Kmom01</a></li>
-                    <li><a href="kmom02">Kmom02</a></li>
-                    <li><a href="kmom03">Kmom03</a></li>
-                    <li><a href="kmom04">Kmom04</a></li>
-                    <li><a href="kmom05">Kmom05</a></li>
-                    <li><a href="kmom06">Kmom06</a></li>
-                    <li><a href="kmom10">Kmom10</a></li>
-                </ul>
-            </nav>
-            <div class="report">
-                {{ content }}
-            </div>
+    <div class="main" id="main" role="main">
+        <div class="container">
+            <!-- index.twig
+            <div class="auto alert">
+                <h1 class="auto">Alert!</h1>
+            </div> -->
+            {{ content }}
         </div>
-    </div>
     </div>
     <footer>
         <div class="site-footer">

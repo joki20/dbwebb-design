@@ -5,19 +5,17 @@
 @import 'kmom'; // kmom.scss
 
 // overrides shared/scss/variables
-$header-color: #ffffff; // white
-$main-color: #ffffff; // white
+$header-color: #fff; // white
+$main-color: #fff; // white
 $secondary-color: #b0c4de; // lighter blue
 $link-color: #808080; // dark grey
 $text-color: #333;
 
 * {
     font-family: 'Roboto', sans-serif;
-    scrollbar: visible;
 }
 
-.container,
- {
+.container {
     background-color: $main-color;
     line-height: 1.4;
     color: $text-color;
@@ -28,13 +26,11 @@ $text-color: #333;
 .hero-image {
     position: relative;
     display: block;
-    background-image: url("https://www.stockvault.net/data/2011/02/06/117456/preview16.jpg");
+    background-image: url('https://www.stockvault.net/data/2011/02/06/117456/preview16.jpg');
     background-size: 100% auto; // stretch to full width
     background-repeat: no-repeat;
     padding-bottom: 1rem;
-    border-bottom: 1px solid black;
-
-
+    border-bottom: 1px solid #000;
 
     a {
         color: $header-color;
@@ -48,7 +44,7 @@ $text-color: #333;
         color: #51608b;
     }
 
-    #nav-toggle {
+    .nav-toggle {
         position: absolute;
         top: 0;
         right: 0;
@@ -79,10 +75,9 @@ h6 {
 }
 
 .main {
-
     a {
-    color: black;
-    text-decoration: none;
+        color: #000;
+        text-decoration: none;
     }
 
     .sidemenu li:hover {
@@ -90,7 +85,7 @@ h6 {
     }
 
     a:visited {
-        color: black;
+        color: #000;
     }
 
     .report {
@@ -100,22 +95,22 @@ h6 {
 
 footer {
     background-color: $secondary-color;
-    text-align:center;
-    color: black;
+    text-align: center;
+    color: #000;
     margin-bottom: 0;
 
     a { // nested social links
-        color: black;
+        color: #000;
         text-decoration: none;
     }
 
     a:hover {
-        color: white;
+        color: #fff;
     }
 }
 
 @media (max-width: 767px) {
-    #nav {
+    nav {
         background-color: $main-color;
     }
 }

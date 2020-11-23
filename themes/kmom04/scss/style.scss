@@ -1,0 +1,173 @@
+// containing eventual modules
+@import '../../shared/scss/base'; // import from shared, including normalize, fonts, FontAwesome
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap'); // import 'Open Sans' and Roboto fonts
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import 'report'; // report.scss
+@import 'kmom'; // kmom.scss
+@import 'analysis'; // analysis.scss
+
+// this overrides shared/scss/variables
+
+// color scheme
+$bg-color: #bef9fa; // lightblue
+$base-color: #85b7e6; // blue
+$link-color: #5a65fa; // blue
+$purple-color: #7d4ee6; // purple
+$menu-color: #c64bff; // pink
+$text-color: #000;
+
+* {
+    font-family: 'Roboto', sans-serif;
+    color: $text-color;
+}
+
+body {
+    background-color: $bg-color;
+}
+
+.container {
+    background-color: $bg-color;
+    line-height: 1.4;
+    color: $base-color;
+    min-height: 24rem;
+    padding-bottom: 1rem;
+}
+
+.hero-image {
+    background-color: $base-color;
+    position: relative;
+    display: block;
+    background-size: 100% auto; // stretch to full width
+    background-repeat: no-repeat;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $text-color;
+
+    img {
+        filter: grayscale(100%) brightness(50%) opacity(80%);
+    }
+
+    .nav-toggle {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    ul {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+}
+
+nav {
+    background-color: $bg-color;
+
+    a:hover {
+        color: $link-color;
+    }
+}
+
+.logo {
+    position: relative;
+
+}
+
+h1 {
+    font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Varela Round', sans-serif;
+    color: $text-color;
+}
+
+.main {
+    a {
+        color: $link-color;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .sidemenu li:hover {
+        background-color: $base-color;
+    }
+    
+
+    a:visited {
+        color: $text-color;
+    }
+
+    .report {
+        text-align: left;
+    }
+}
+
+.landingpage .kmom-box {
+    h3 {
+        background-color: $base-color;
+        color: $text-color;
+    }
+
+    .link {
+        background-color: $link-color;
+        color: $bg-color;
+    }
+}
+
+footer {
+    background-color: $base-color;
+    text-align: center;
+    color: $text-color;
+    margin-bottom: 0;
+    border-top: 2px solid $text-color;
+
+    a { // nested social links
+        color: $text-color;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: $bg-color;
+    }
+}
+
+table {
+    h3 {
+        font-weight: bold;
+    }
+
+    h3,
+    h4 {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+    }
+
+    th {
+        background-color: $base-color;
+    }
+
+
+    td {
+        border: 1px solid $text-color;
+        padding: 0.5rem;
+        vertical-align: top;
+    }
+
+    tr:nth-child(2n) {
+        background-color: $base-color;
+    }
+}
+
+@media (max-width: 767px) {
+    nav {
+        background-color: $bg-color;
+    }
+}

@@ -6674,6 +6674,7 @@ table img {
 
 body {
   background-color: #bef9fa;
+  overflow-y: scroll;
 }
 
 .container {
@@ -6791,6 +6792,15 @@ table td {
 }
 table tr:nth-child(2n) {
   background-color: #85b7e6;
+}
+
+.kmom04-table {
+  margin: 0 auto;
+  width: 80%;
+}
+.kmom04-table td {
+  width: 20%;
+  height: 50px;
 }
 
 @media (max-width: 767px) {

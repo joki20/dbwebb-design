@@ -6675,6 +6675,7 @@ table img {
 
 body {
   background-color: #121212;
+  overflow-y: scroll;
 }
 
 .container {

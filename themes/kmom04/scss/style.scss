@@ -23,6 +23,7 @@ $text-color: #000;
 
 body {
     background-color: $bg-color;
+    overflow-y: scroll;
 }
 
 .container {
@@ -163,6 +164,16 @@ table {
 
     tr:nth-child(2n) {
         background-color: $base-color;
+    }
+}
+
+.kmom04-table {
+    margin: 0 auto;
+    width: 80%;
+
+    td {
+        width: 20%;
+        height: 50px;
     }
 }
 

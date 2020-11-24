@@ -179,6 +179,16 @@ table {
     }
 }
 
+.kmom04-table {
+    margin: 0 auto;
+    width: 80%;
+
+    td {
+        width: 20%;
+        height: 50px;
+    }
+}
+
 @media (max-width: 767px) {
     nav {
         background-color: $bg-color;

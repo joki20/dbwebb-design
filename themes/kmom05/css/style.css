@@ -6570,7 +6570,7 @@ footer p {
 .landingpage h2 {
   display: block;
   grid-column: span 3;
-  /* grud wudth 3 columns for title */
+  /* grud width 3 columns for title */
   justify-self: center;
 }
 .landingpage .kmom-box.project {
@@ -6606,6 +6606,24 @@ footer p {
 .kmompage nav ul li {
   padding-left: 0.4rem;
   line-height: 1.5;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 @media (max-width: 767px) {
@@ -6667,42 +6685,97 @@ table img {
   border: 1px solid #000;
 }
 
+/* Prevent fixed size images from getting outside layout */
+img,
+embed,
+object,
+video {
+  max-width: 100%;
+}
+
+picture {
+  border: 1px solid #000;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  /* prevent overflow of image beneath grid container */
+}
+picture img {
+  display: block;
+  /* removes whitespace below image */
+}
+
+/* GRID */
+@media (min-width: 340px) {
+  .grid {
+    display: grid;
+    padding: 2rem;
+    overflow: auto;
+    /* do not overlap footer */
+    gap: 1.5rem 1.5rem;
+    /* row column spacing between grids */
+    grid-template-columns: 1fr;
+    /* 1 column */
+    grid-auto-rows: auto;
+    /* autoresize all rows */
+    margin: 2rem auto;
+    /* center grid */
+    max-height: 100%;
+  }
+}
+@media (min-width: 800px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    /* 2 columns */
+    grid-auto-rows: 240px;
+    /* all rows */
+    max-width: 800px;
+  }
+}
+@media (min-width: 1280px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    /* 3 columns */
+    grid-auto-rows: 250px;
+    /* all rows */
+    max-width: 1280px;
+    /* all rows */
+  }
+}
 * {
   font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  color: #bbb;
+  color: #000;
 }
 
 body {
-  background-color: #121212;
+  background-color: #bef9fa;
   overflow-y: scroll;
 }
 
 .container {
-  background-color: #121212;
+  background-color: #bef9fa;
   line-height: 1.4;
-  color: #121212;
+  color: #85b7e6;
   min-height: 24rem;
   padding-bottom: 1rem;
 }
 
 .hero-image {
-  background-color: #121212;
+  background-color: #85b7e6;
   position: relative;
   display: block;
   background-size: 100% auto;
   background-repeat: no-repeat;
   padding-bottom: 1rem;
-  border-bottom: 2px solid #bbb;
+  border-bottom: 1px solid #000;
 }
 .hero-image img {
-  filter: grayscale(100%) brightness(70%);
+  filter: grayscale(100%) brightness(50%) opacity(80%);
 }
 .hero-image .nav-toggle {
   position: absolute;
   top: 0;
   right: 0;
-  color: #bbb;
 }
 .hero-image ul {
   margin-top: 0;
@@ -6713,10 +6786,10 @@ body {
 }
 
 nav {
-  background-color: #121212;
+  background-color: #bef9fa;
 }
-nav a {
-  color: #bbb;
+nav a:hover {
+  color: #5a65fa;
 }
 
 .logo {
@@ -6734,56 +6807,46 @@ h4,
 h5,
 h6 {
   font-family: "Varela Round", sans-serif;
-  color: #bbb;
+  color: #000;
 }
 
-.main img {
-  filter: brightness(80%);
-}
 .main a {
-  color: #bbb;
+  color: #5a65fa;
   text-decoration: none;
   font-weight: bold;
 }
 .main .sidemenu li:hover {
-  background-color: #bbb;
-}
-.main .sidemenu li:hover a {
-  color: #121212;
+  background-color: #85b7e6;
 }
 .main a:visited {
-  color: #bbb;
+  color: #000;
 }
 .main .report {
   text-align: left;
 }
 
-.landingpage .kmom-box {
-  border: 2px solid #bbb;
-}
 .landingpage .kmom-box h3 {
-  background-color: #121212;
-  color: #bbb;
-  border-bottom: 2px solid #bbb;
+  background-color: #85b7e6;
+  color: #000;
 }
 .landingpage .kmom-box .link {
-  background-color: #bbb;
-  color: #121212;
+  background-color: #5a65fa;
+  color: #bef9fa;
 }
 
 footer {
-  background-color: #121212;
+  background-color: #85b7e6;
   text-align: center;
-  color: #bbb;
+  color: #000;
   margin-bottom: 0;
-  border-top: 2px solid #bbb;
+  border-top: 2px solid #000;
 }
 footer a {
-  color: #bbb;
+  color: #000;
   text-decoration: none;
 }
 footer a:hover {
-  color: #121212;
+  color: #bef9fa;
 }
 
 table h3 {
@@ -6791,21 +6854,19 @@ table h3 {
 }
 table h3,
 table h4 {
-  color: #121212;
   font-size: 1.5rem;
+  padding: 0.5rem;
 }
 table th {
-  background-color: #bbb;
-  border: 2px solid #bbb;
+  background-color: #85b7e6;
 }
 table td {
-  border: 1px solid #bbb;
+  border: 1px solid #000;
   padding: 0.5rem;
   vertical-align: top;
 }
 table tr:nth-child(2n) {
-  background-color: #bbb;
-  border: 2px solid #bbb;
+  background-color: #85b7e6;
 }
 
 .kmom04-table {
@@ -6819,6 +6880,6 @@ table tr:nth-child(2n) {
 
 @media (max-width: 767px) {
   nav {
-    background-color: #121212;
+    background-color: #bef9fa;
   }
 }

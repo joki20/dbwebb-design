@@ -1,0 +1,50 @@
+/* Prevent fixed size images from getting outside layout */
+
+img,
+embed,
+object,
+video {
+    max-width: 100%;
+}
+
+picture {
+    border: 1px solid #000;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden; /* prevent overflow of image beneath grid container */
+
+    img {
+        display: block; /* removes whitespace below image */
+    }
+}
+
+/* GRID */
+
+@media (min-width: 340px) {
+    .grid {
+        display: grid;
+        padding: 2rem;
+        overflow: auto; /* do not overlap footer */
+        gap: 1.5rem 1.5rem; /* row column spacing between grids */
+        grid-template-columns: 1fr; /* 1 column */
+        grid-auto-rows: auto; /* autoresize all rows */
+        margin: 2rem auto; /* center grid */
+        max-height: 100%;
+    }
+}
+
+@media (min-width: 800px) {
+    .grid {
+        grid-template-columns: 1fr 1fr; /* 2 columns */
+        grid-auto-rows: 240px; /* all rows */
+        max-width: 800px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr; /* 3 columns */
+        grid-auto-rows: 250px; /* all rows */
+        max-width: 1280px; /* all rows */
+    }
+}

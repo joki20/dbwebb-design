@@ -153,27 +153,27 @@ Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incid
 <fieldset>
     <legend>Legend</legend>
     <label>Label</label>
-    <input type="checkbox"/>
-    <input type="checkbox" checked="checked"/>
-    <input type="radio"/>
-    <input type="radio" checked="checked"/><br/>
-    <input type="text" value="Lorem ipsum"/>
-    <input type="password" value="Ut enim"/><br/>
-    <input type="submit" value="Submit"/>
-    <input type="reset" value="Reset"/>
-    <input type="button" value="Button (Input)"/>
+    <label>Checkbox<input type="checkbox" id="checkbox" value="checkbox" /></label>
+    <label>Checked<input type="checkbox" checked="checked" id="checked" value="checked"/></label>
+    <label>Radio<input type="radio" id="radio" value="radio"/></label>
+    <label>Checked radio<input type="radio" checked="checked" id="radiochecked" value="radiochecked"/></label><br/>
+    <label>Text<input type="text" value="Lorem ipsum" id="lorem" /></label>
+    <label>Password<input type="password" value="Ut enim" id="utenim" /></label><br/>
+    <label>Submit<input type="submit" value="Submit" id="submit" value="submit"/></label>
+    <label>Reset<input type="reset" value="Reset" id="reset" /></label>
+    <label>Button<input type="button" value="Button (Input)" id="input" /></label>
     <button>Button</button><br/>
-    <textarea>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua<br/>.</textarea><br/>
-    <select>
+    <label>Textarea<textarea>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua<br/>.</textarea></label><br/>
+    <label>Options<select>
         <option>Lorem ipsum</option>
         <option>Ut enim</option>
-    </select><br/>
-    <select multiple="multiple">
+    </select></label><br/>
+    <label>Multiple options<select multiple="multiple">
         <option>Lorem ipsum</option>
         <option selected="selected">Ut enim</option>
         <option>Quis aute iure</option>
         <option>Excepteur sint</option>
-    </select>
+    </select></label>
 </fieldset>
 
 Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.

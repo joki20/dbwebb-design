@@ -61,13 +61,13 @@ Berätta kort om din "metod", hur du gör för att utföra undersökningen. Ber�
     </thead>
     <tbody>
         <tr>
-            <td><a href="../assets/img/4_coolstuff.png"><img src="../assets/img/4_coolstuff.png" alt="Coolstuff"></a>
+            <td><a href="../assets/img/4_coolstuff.png"><img src="../image/4_coolstuff.png?q=10" alt="Coolstuff"></a>
             <a href="https://www.coolstuff.se/">https://www.coolstuff.se/</a>
             </td>
-            <td><a href="../assets/img/4_volkswagen.png"><img src="../assets/img/4_volkswagen.png" alt="Volkswagen"></a>
+            <td><a href="../assets/img/4_volkswagen.png"><img src="../image/4_volkswagen.png?q=10" alt="Volkswagen"></a>
             <a href="https://www.volkswagen.se">https://www.volkswagen.se</a>
             </td>
-            <td><a href="../assets/img/4_krav.png"><img src="../assets/img/4_krav.png" alt="KRAV"></a>
+            <td><a href="../assets/img/4_krav.png"><img src="../image/4_krav.png?q=10" alt="KRAV"></a>
             <a href="https://www.krav.se/">https://www.krav.se/</a>
             </td>
         </tr>

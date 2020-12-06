@@ -5,20 +5,18 @@
 @import 'report'; // report.scss
 @import 'kmom'; // kmom.scss
 @import 'analysis'; // analysis.scss
-@import 'gallery'; // gallery.scss
 
 // this overrides shared/scss/variables
 
 // color scheme
-$bg-color: #bef9fa; // lightblue
-$base-color: #85b7e6; // blue
-$link-color: #5a65fa; // blue
-$purple-color: #7d4ee6; // purple
-$menu-color: #c64bff; // pink
-$text-color: #000;
+$bg-color: #121212; // dark
+$base-color: #121212; // dark
+$link-color: #bbb; // grey
+$text-color: #bbb; // make somewhat darker
 
 * {
     font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     color: $text-color;
 }
 
@@ -42,16 +40,17 @@ body {
     background-size: 100% auto; // stretch to full width
     background-repeat: no-repeat;
     padding-bottom: 1rem;
-    border-bottom: 1px solid $text-color;
+    border-bottom: 2px solid $text-color;
 
     img {
-        filter: grayscale(100%) brightness(50%) opacity(80%);
+        filter: grayscale(100%) brightness(70%);
     }
 
     .nav-toggle {
         position: absolute;
         top: 0;
         right: 0;
+        color: $text-color;
     }
 
     ul {
@@ -67,8 +66,8 @@ body {
 nav {
     background-color: $bg-color;
 
-    a:hover {
-        color: $link-color;
+    a {
+        color: $text-color;
     }
 }
 
@@ -92,6 +91,10 @@ h6 {
 }
 
 .main {
+    img {
+        filter: brightness(80%);
+    }
+
     a {
         color: $link-color;
         text-decoration: none;
@@ -99,12 +102,15 @@ h6 {
     }
 
     .sidemenu li:hover {
-        background-color: $base-color;
+        background-color: $text-color;
     }
-    
+
+    .sidemenu li:hover a {
+        color: $bg-color;
+    }
 
     a:visited {
-        color: $purple-color;
+        color: $text-color;
     }
 
     .report {
@@ -113,9 +119,13 @@ h6 {
 }
 
 .landingpage .kmom-box {
+
+    border: 2px solid $text-color;
+
     h3 {
         background-color: $base-color;
         color: $text-color;
+        border-bottom: 2px solid $text-color;
     }
 
     .link {
@@ -148,14 +158,15 @@ table {
 
     h3,
     h4 {
+        color: $bg-color;
         font-size: 1.5rem;
-        padding: 0.5rem;
     }
 
     th {
-        background-color: $base-color;
+        background-color: $text-color;
+        border: 2px solid $text-color;
+        color: $bg-color;
     }
-
 
     td {
         border: 1px solid $text-color;
@@ -164,8 +175,16 @@ table {
     }
 
     tr:nth-child(2n) {
-        background-color: $base-color;
+        background-color: $text-color;
+        border: 2px solid $text-color;
     }
+}
+
+input,
+textarea,
+button,
+select {
+    color: $bg-color;
 }
 
 .kmom04-table {

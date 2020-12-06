@@ -47,20 +47,20 @@ Berätta kort om din "metod", hur du gör för att utföra undersökningen. Ber�
 <table>
     <thead>
         <tr>
-            <th><h3>[Expressen](https://www.expressen.se/)</h3></th>
-            <th><h3>[Flickrs Explore-sida](https://www.flickr.com/explore)</h3></th>
-            <th><h3>[Prodma.se](https://prodma.se/)</h3></th>
+            <th><h3>Expressen</h3></th>
+            <th><h3>Flickr Explore</h3></th>
+            <th><h3>Prodma.se</h3></th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td><a href="../assets/img/5_expressen.png"><img src="../assets/img/5_expressen.png" alt="Expressen"></a>
+            <td><a href="../assets/img/5_expressen.png"><img src="../image/5_expressen.png?q=10" alt="Expressen"></a>
             <a href="https://www.expressen.se/">https://www.expressen.se/</a>
             </td>
-            <td><a href="../assets/img/5_flickr.png"><img src="../assets/img/5_flickr.png" alt="Flickr Explore"></a>
+            <td><a href="../assets/img/5_flickr.png"><img src="../image/5_flickr.png?q=10" alt="Flickr Explore"></a>
             <a href="https://www.flickr.com/explore">https://www.flickr.com/explore</a>
             </td>
-            <td><a href="../assets/img/5_prodma.png"><img src="../assets/img/5_prodma.png" alt="Prodma.se"></a>
+            <td><a href="../assets/img/5_prodma.png"><img src="../image/5_prodma.png?q=10" alt="Prodma.se"></a>
             <a href="https://www.prodma.se/">https://www.prodma.se/</a>
             </td>
         </tr>

@@ -21,5 +21,5 @@ Template: report # looking for analysis.twig
 <div class="kmom-box">
 <h3>Design principles</h3>
 <p>Lite text</p>
-<a href="analysis/03_design_principles"><div class="link">></div></a>
+<a href="analysis/03_designprincip"><div class="link">></div></a>
 </div>

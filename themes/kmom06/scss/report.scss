@@ -1,0 +1,52 @@
+$box-color: #51608b;
+
+.landingpage {
+    display: grid;
+    gap: 2rem 3rem; /* row column spacing between grids */
+    margin: 2rem;
+
+    .kmom-box {
+        border: 2px solid $box-color;
+        border-bottom: 4px solid $box-color;
+        border-right: 4px solid $box-color;
+    }
+
+    .kmom-box h3 {
+        margin: 0 auto;
+        padding: 0.5rem;
+        display: block;
+        background-color: $box-color;
+        color: #fff;
+    }
+
+    .kmom-box p {
+        padding: 0.5rem;
+    }
+
+    .kmom-box .link {
+        background-color: #b0c4de;
+        color: $box-color;
+        display: inline-block;
+        padding: 0.5rem 0.7rem;
+        margin: 1rem;
+        float: right;
+        border-radius: 100%;
+        font-weight: 900;
+    }
+
+    h2 {
+        display: block;
+        grid-column: span 3; /* grud width 3 columns for title */
+        justify-self: center;
+    }
+
+    .kmom-box.project {
+        grid-column: span 3; /* 100 % div width */
+    }
+}
+
+@media (max-width: 767px) {
+    .kmom-box {
+        grid-column: span 3;
+    }
+}

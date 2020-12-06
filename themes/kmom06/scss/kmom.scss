@@ -1,0 +1,55 @@
+.kmompage {
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-areas: 'menu content';
+    padding: 0 1rem;
+    grid-gap: 1rem;
+
+    .sidemenu { grid-area: menu; }
+    .kmom { grid-area: content; }
+
+    nav ul {
+        list-style-type: none; /* remove bullets */
+        min-height: 24rem;
+        padding-left: 0.6rem; /* adjust indentation */
+    }
+
+    nav ul li {
+        padding-left: 0.4rem;
+        line-height: 1.5;
+    }
+}
+
+// VIDEO
+.embed-container {
+    position: relative; // relativt föräldraelementet, gör vi kan sätta position: absolute för elementet inuti .embed-container
+    padding-bottom: 56.25%; // pga aspect-ratio för 16:9 videos. 4:3 använder 75%
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute; // positionerar elementet uppe till vänster
+    top: 0;
+    left: 0;
+    width: 100%; // fyller ut hela container med width och height
+    height: 100%;
+}
+
+
+@media (max-width: 767px) {
+    .kmompage {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 'content content';
+    }
+
+    .kmom {grid-area: content; }
+
+    .sidemenu {
+        display: none;
+    }
+}

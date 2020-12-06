@@ -5,7 +5,7 @@ Description: Min index-sida.
 
 # Hem
 
-![Bild på mig](%assets_url%/img/johan.jpg "Johan") {.photo}
+<img src="image/johan.jpg?q=40" width=100% height="100%" alt="Foto på Johan">
 
 Halloj! <i class="fas fa-heart"></i>
 

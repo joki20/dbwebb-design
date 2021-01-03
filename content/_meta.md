@@ -1,5 +1,5 @@
 ---
-Logo: image/leaf_256x256.png
+Logo: image/logo.png?w=150&h=150
 Tagline: Allt du behöver veta om mig.
 icon: fas fa-snowflake
 Social:

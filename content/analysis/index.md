@@ -23,3 +23,15 @@ Template: report # looking for analysis.twig
 <p>Lite text</p>
 <a href="analysis/03_designprincip"><div class="link">></div></a>
 </div>
+
+<div class="kmom-box">
+<h3>Webbplatsdesign</h3>
+<p>Lite text</p>
+<a href="analysis/10_webbplatsdesign"><div class="link">></div></a>
+</div>
+
+<div class="kmom-box">
+<h3>Design och webbplatser</h3>
+<p>Analys av min projektsidas design, element och principer</p>
+<a href="analysis/11_design-och-webbplatser"><div class="link">></div></a>
+</div>

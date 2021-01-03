@@ -6858,7 +6858,7 @@ table h3 {
 }
 table h3,
 table h4 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   padding: 0.5rem;
 }
 table th {
@@ -6881,6 +6881,20 @@ table tr:nth-child(2n) {
 .kmom04-table td {
   width: 20%;
   height: 50px;
+}
+
+.analysis-table {
+  font-size: 0.8em;
+}
+
+.color-table {
+  margin: 0 auto;
+  width: 50%;
+}
+.color-table .color-scheme td {
+  height: 100px;
+  border: 1px solid #000;
+  width: 20%;
 }
 
 @media (max-width: 767px) {

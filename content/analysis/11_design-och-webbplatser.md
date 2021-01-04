@@ -4,7 +4,7 @@ Description: Min analys av kmom10.
 Template: analysis # looking for analysis.twig
 ---
 
-# Colors
+# Design och webbplatser
 
 I uppgift 6 för kmom10 ska jag analysera webbplatsen [Advokatkonsulten](https://www.student.bth.se/~joki20/dbwebb-kurser/design/me/kmom10/) på uppdrag av organisationen "Valfrihet" utifrån följande aspekter:
 

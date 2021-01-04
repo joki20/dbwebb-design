@@ -6897,8 +6897,18 @@ table tr:nth-child(2n) {
   width: 20%;
 }
 
+.advokatkonsulten {
+  width: 50%;
+  margin: 0 auto;
+}
+
 @media (max-width: 767px) {
   nav {
     background-color: #bef9fa;
+  }
+
+  .advokatkonsulten {
+    width: 90%;
+    margin: 0 auto;
   }
 }

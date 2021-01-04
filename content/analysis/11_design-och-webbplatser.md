@@ -32,6 +32,10 @@ Följande tillvägagångssätt kommer att tillämpas vid analysen av min sida:
 
 ## Resultat
 
+Här är en screenshot på sidan, klicka för större bild.
+
+<p class="advokatkonsulten"><a href="../assets/img/11_advokatkonsulten.png"><img src="../image/11_advokatkonsulten.png?q=40" alt="Advokatkonsulten"></a></p>
+
 Här är sidans färgpalett.
 
 <table class="color-table">

@@ -196,8 +196,18 @@ table {
     }
 }
 
+.advokatkonsulten {
+    width: 50%;
+    margin: 0 auto;
+}
+
 @media (max-width: 767px) {
     nav {
         background-color: $bg-color;
+    }
+
+    .advokatkonsulten {
+        width: 90%;
+        margin: 0 auto;
     }
 }
